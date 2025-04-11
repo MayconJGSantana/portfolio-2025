@@ -1,1 +1,190 @@
-tem que colocar o certo
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Incluir CSS do Google -->
+
+    <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+    rel="stylesheet">
+
+    <title>
+
+        Main
+
+    </title>
+
+
+
+    <style>
+
+        * {
+
+            margin: 0px;
+
+        }
+        
+        .introducao {
+
+            text-align: justify;
+
+            line-height: 1.5;
+
+            text-indent: 25px;
+
+            width: 50%;
+
+        }
+
+        #titulo {
+
+            text-align: center;
+
+        }
+
+        ul {
+
+            display: flex; /* Os blocos ficam flexíveis, podemos colocá-los de formas diferentes*/
+
+            flex-direction: row; /* Deixa os blocos em linha */
+
+
+
+            list-style-type: none; /* Sem bolinhas */
+
+            background-color: #0118D8;
+
+            justify-content: center;
+            /* Coloca os itens no lado que você quiser. O Justify só server para itens flexíveis */
+
+        }
+
+        ul li {
+
+            background-color: #1B56FD;
+
+            padding: 5px;
+            /* Aumenta a distância entre o padding - Margem interna - de todos os cantos, mas você pode especificar colocando padding-<lado> */
+
+            margin: 10px;
+            /* Aumenta a distância margin - Entre os blocos - */
+
+            border-radius: 50px;
+
+        }
+
+        ul li a {
+
+            color: #E9DFC3;
+
+            text-decoration: none;
+
+            padding: 10px; /* A tag vai ficar em cima do padding do ul */
+
+            display: block;
+            
+
+        }
+
+        ul li a:hover /* Se o mouse estiver em cima */ {
+
+            background-color: blueviolet;
+
+            color: wheat;
+
+            transition: all 0.5s ease; /* Dá um delay na troca de estilo */
+
+            border-radius: 10px;
+
+        }
+
+        .cursiva {
+
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 900; /* Espessura da fonte */
+            font-style: normal;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1 id="titulo" >
+
+        Meu Portfólio
+
+    </h1>
+
+    <ul>
+
+        <li>
+
+            <a href="" class="cursiva">
+
+                Home
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="páginas/sobre_mim.html" class="cursiva">
+
+                Sobre mim
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="páginas/projetos.html" class="cursiva">
+
+                Projetos
+
+            </a>
+
+        </li>
+
+    </ul>
+
+    <p class="introducao" >
+
+        Com finalidade de organizar a disciplina durante o ano letivo de 2025, este site está sendo produzido. Proposta feita pelo Mestre Jefferson Chaves, um docente muito competente, a fim de aquecermos nossos cérebros.
+
+    </p>
+
+    <p class="introducao" >
+
+        Na disciplina de Desenvolvimento Web, temos o objetivo de adquirir habilidades front-end, ou seja, o estilo de um site e seu conteúdo serão modificados por nós. Nesse viés, tudo que há aqui aprendemos ao decorrer dos bimestres.
+    
+    </p>
+
+    <p class="introducao" >
+
+        Agora estamos utilizando tudo que aprendemos até o momento, até o dia 11 de abril de 2025, nesse portfólio. Presente está, nesta plicação, páginas de importantes presenças, pois, com a facilitação de sua ordenagem e localização, seremos, eu e meus colegas, capazes de exercem as demais atividades, que virão com o tempo, sem perder a noção de horário procurando algum documento que está perdido no GitHub.
+
+    </p>
+
+
+</body>
+
+</html>
