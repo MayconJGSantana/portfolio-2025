@@ -3,7 +3,9 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
 
@@ -19,16 +21,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
     rel="stylesheet">
 
-
-
-
     <title>
         
-        Document
+        Auto biografia
 
     </title>
-
-    
 
 
     <style>
@@ -109,9 +106,11 @@
             font-optical-sizing: auto;
             font-weight: 900; /* Espessura da fonte */
             font-style: normal;
+
         }
-        
+
         #cabecalho {
+            
             background-color: white;
             position: fixed;
             width: 100%;
@@ -122,69 +121,113 @@
 
         }
 
-        #container_projetos > div {
-            
-            overflow: auto;
-            width: 80%;
-            margin: 0 calc(20% / 2);
+        .seccao {
+
+            height: 75vh;
+            width: 65%;
+            margin: 0 0 0 calc(35% / 2);
+            float: left;
+            place-content: center;
 
         }
 
-            .projetos {
+            .seccao ul {
 
-                height: auto;
-                width: auto;
-
-                float: left;
+                list-style-type: none;
 
             }
+
+            .seccao h2 {
+
+                font-size: 40px;
+            }
+
+            .seccao p {
+
+                font-size: 25px;
+
+                padding-top: 20px;
+                padding-left: 30px;
+            }
+
+            #data_nascimento {
+                
+                margin-top: 20px;
+
+            }
+
+            #redes_sociais {
+
+                margin-top: 100px;
+
+                justify-content: center;
+
+            }
+
             
-                .projeto {
-                    
-                    height: 49vh;
-                    margin-bottom: 1vh;
-                    border-radius: 35px;
-                    background-color: rgba(128, 128, 128, 0.363);
-                    width: 18.75vw;
-                    margin-right: 1vw;
+                #redes_sociais a button {
+
+                    text-decoration: none;
 
                 }
 
-                    .projeto a {
-
-                        padding-left: 100px;
 
 
+                #redes_sociais a button {
 
-                    }
+                    
+                    width: 25%;
+                    height: 70px;
 
-                    .botao_projeto {
+                    font-size: 20px;
 
-                        height: 70px;
-                        width: 170px;
-                        border-radius: 50px;
-                        margin-top: 60px;
+                    border-radius: 50px;
+                    
+                    border: 10px rgba(0, 0, 0, 0.219) solid;
 
-                        font-size: 30px;
+                    background-color: aquamarine;
 
-                        border: #0118D8 1px solid;
+                    color: black;
 
-                    }
+                }
 
-                    #portfolio {
+                #instagram {
+                    
+                    margin-left: 200px;
+                    margin-right: 60px;
+                }
 
-                        width: 85%;
-                        height: auto;
-                        border-radius: 20px 20px 20px 20px;
+        #container_foto {
 
-                        margin-left: 30px;
-                        margin-top: 30px;
-
-                    }
+            width: auto;
+            height: auto;
+            
 
 
+        }
 
-        
+            #eu {
+
+                border-radius: 50px;
+
+                width: 15%;
+                height: 800px;
+
+                float: left;
+
+                margin-left: 25px;
+
+            }
+
+            #eu:hover {
+
+                transition-delay: 0.15s;
+
+                transform: rotate(-2deg);
+
+            }
+
+
 
     </style>
 
@@ -192,6 +235,7 @@
 
 <body>
     
+
     <header id = "cabecalho">
 
         <h1 id="titulo" >
@@ -214,7 +258,7 @@
 
             <li>
 
-                <a href="../sobre_mim/sobre_mim.html" class="cursiva">
+                <a href="" class="cursiva">
 
                     Sobre mim
 
@@ -224,7 +268,7 @@
 
             <li>
 
-                <a href="" class="cursiva">
+                <a href="../projetos/projetos.html" class="cursiva">
 
                     Projetos
 
@@ -232,82 +276,95 @@
 
             </li>
 
-        </ul>
+        </ul>   
 
     </header>
 
 
+    <main id = "container_conteudo">
 
+        <div class = "seccao">
 
+            <ul>
 
-    <main id = "container_projetos">
+                <li id = "idade">
+
+                    <h2>
+
+                        Idade
+
+                    </h2>
+
+                    <p>
         
-        <div>
-
-            <div class = "projetos">
-                <div class = "projeto">
-
-                    <img id = "portfolio" src="portfolio.webp">
+                        16 anos
+                    
+                    </p>
         
-                    <a href="../../index.html">
+                </li>
         
-                        <button class = "botao_projeto">
+        
+                <li id = "data_nascimento">
 
-                           Portfólio
+                    <h2>
+
+                        Data de nascimento
+
+                    </h2>
+        
+                    <p>
+        
+                        19/12/2008
+        
+                    </p>
+        
+                </li>
+        
+                <li id = "redes_sociais">
+
+                    <a href="https://github.com/MayconJGSantana" target = "_blank">
+                            
+                        <button id = "instagram">
+
+                            Instagram
 
                         </button>
-        
+
                     </a>
 
-                </div>
 
+                    <a href="https://github.com/MayconJGSantana" target = "_blank">
+                            
+                        <button id = "github">
 
-                <div class = "projeto">
+                            GitHub
 
-                </div>
+                        </button>
 
-            </div>
+                    </a>
 
+                </li>
         
-            <div class = "projetos">
-
-                <div class = "projeto">
-                    
-
-                </div>
-
-                <div class = "projeto"></div>
-
-            </div>
-
-            <div class = "projetos">
-
-                <div class = "projeto"></div>
-
-                <div class = "projeto"></div>
-            </div>
-            
-            <div class = "projetos">
-
-                <div class = "projeto"></div>
-
-                <div class = "projeto"></div>
-            </div>
+            </ul>
 
 
         </div>
+        
+        <div id = "container_foto">
 
+            <img id = "eu" src="eu.jpg" onhove>
+
+        </div>
 
     </main>
 
-
+    
 
 </body>
 
 <script>
 
-    
-    document.getElementById("container_projetos").style.marginTop = `calc(${document.getElementById("cabecalho").offsetHeight}px + 5px)`; // Define a margem superior do container para não bater no cabecalho
+    document.getElementById("container_conteudo").style.marginTop = `calc(${document.getElementById("cabecalho").offsetHeight}px + 5px)`; // Define a margem superior do container para não bater no cabecalho
 
 </script>
 
