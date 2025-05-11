@@ -34,18 +34,22 @@
         * {
 
             margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
 
         }
+
+        :root {
+            --teste: 10px;
+        }
         
-        .introducao {
+        .texto {
 
             text-align: justify;
 
             line-height: 1.5;
 
             text-indent: 25px;
-
-            width: 50%;
 
         }
 
@@ -120,71 +124,422 @@
 
         }
 
+        .fundo {
+
+            font-size: 50px;
+
+            opacity: 0.5;
+
+            color: cornflowerblue;
+
+        }
+        
+        #cabecalho {
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            height: auto;
+            left: 0;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        #decoracao {
+
+            width: auto;
+            height: auto;
+            margin: 0 calc((100% - 1193.44px) / 2);
+            
+        }
+
+        #decoracao img {
+
+            height: 500px;
+            width: 1193.44px;
+            border-radius: 30px 2px 30px 15px;
+            
+        }
+
+        .seccao {
+
+            height: 75vh;
+            width: 65%;
+            margin: 0 calc(35% / 2);
+
+        }
+
+        #fundo {
+            width: 100px;
+            height: 100px;
+            margin: 0 calc((100% - 100px) / 2)
+        }
+
+        #disciplina .subtitulo {
+
+            width: 100%;
+            margin: 0px;
+            margin-top: 120px;
+        }
+
+        #disciplina .texto {
+
+            position: relative;
+            width: 100%;
+            font-size: 20px;
+            margin-top: 100px;
+            padding-top: 20px;
+            border-top: black solid 1px;
+
+        }
+
+        #disciplina div {
+
+            position: relative;
+            width: 35%;
+            float: left;
+            padding-left: 20px
+        }
+
+        #disciplina img {
+
+            margin-top: 100px;
+            margin-left: 80px;
+            position: relative;
+            width: 55%;
+            height: 440px;
+            float: left;
+        }
+
+        #motivacao img {
+
+            margin-top: 100px;
+            position: relative;
+            width: 55%;
+            height: 500px;
+            float: left;
+
+        }
+
+        #motivacao .subtitulo {
+
+            position: relative;
+            width: 100%;
+            margin: 0px;
+            margin-top: 120px;
+
+        }
+
+        #motivacao .texto {
+
+            position: relative;
+            font-size: 20px;
+            width: 100%;
+            margin-top: 100px;
+            padding-top: 20px;
+            border-top: black solid 1px;
+
+        }
+
+        #motivacao div {
+
+            float: left;
+            width: 42%;
+            padding-left: 70px;
+        }
+
+        #reflexao .subtitulo {
+
+            width: 100%;
+            margin: 0px;
+            margin-top: 120px;
+        }
+
+        #reflexao .texto {
+
+            position: relative;
+            width: 100%;
+            font-size: 20px;
+            margin-top: 100px;
+            padding-top: 20px;
+            border-top: black solid 1px;
+
+        }
+
+        #reflexao div {
+
+            position: relative;
+            width: 35%;
+            float: left;
+            padding-left: 20px
+        }
+
+        #reflexao img {
+
+            margin-top: 100px;
+            margin-left: 80px;
+            position: relative;
+            width: 55%;
+            height: 440px;
+            float: left;
+        }
+
+
+
+        #introducao {
+            
+            margin-top: 50px;
+
+        }
+
+            #introducao .subtitulo {
+                
+                margin: 0 calc(70% / 2);
+                width: 30%;
+
+            }
+
+            #introducao .texto {
+
+                background: url(ideia.png) no-repeat; /* Coloca uma imagem de fundo e não repete */
+                background-size: 975px; /* Tamanho da imagem */
+                background-position-x: 150px; /* Posição da imagem */
+
+                color: black;
+
+                border-radius: 20px;
+
+                line-height: 2; /* Espaçamento entre linhas */
+                font-size: 30px;
+
+                padding-top: 50px;
+                padding-left: 250px;
+                padding-right: 140px;
+
+                width: 100%;
+                margin-top: 70px;
+
+            }
+
+
+            .subtitulo {
+
+                text-align: center;
+                background-color: #D1F8EF;
+                border-radius: 100px 5px;
+                font-size: 40px;
+
+            } 
+
+        #rodape {
+
+            height: 200px;
+            width: 100vw;
+            font-size: 40px;
+            text-align: center;
+            color: azure;
+            padding: 0px calc(20vw / 2);
+            background-color: cadetblue;
+
+        }
+
+            #rodape div {
+
+                padding-top: 80px;
+
+            }
+
+
     </style>
+
 
 </head>
 
 <body>
     
-    <h1 id="titulo" >
+    <header id="cabecalho">
 
-        Meu Portfólio
 
-    </h1>
+        <h1 id="titulo" >
 
-    <ul>
+            Meu Portfólio
 
-        <li>
+        </h1>
 
-            <a href="" class="cursiva">
+        <ul>
 
-                Home
+            <li>
 
-            </a>
+                <a href="" class="cursiva">
 
-        </li>
+                    Home
 
-        <li>
+                </a>
 
-            <a href="paginas/sobre_mim.html" class="cursiva">
+            </li>
 
-                Sobre mim
+            <li>
 
-            </a>
+                <a href="paginas/sobre_mim/sobre_mim.html" class="cursiva">
 
-        </li>
+                    Sobre mim
 
-        <li>
+                </a>
 
-            <a href="paginas/projetos.html" class="cursiva">
+            </li>
 
-                Projetos
+            <li>
 
-            </a>
+                <a href="paginas/projetos/projetos.html" class="cursiva">
 
-        </li>
+                    Projetos
 
-    </ul>
+                </a>
 
-    <p class="introducao" >
+            </li>
 
-        Com finalidade de organizar a disciplina durante o ano letivo de 2025, este site está sendo produzido. Proposta feita pelo Mestre Jefferson Chaves, um docente muito competente, a fim de aquecermos nossos cérebros.
+            <li>
 
-    </p>
+                <a href="paginas/registro/" class="cursiva">
 
-    <p class="introducao" >
+                    Registros
 
-        Na disciplina de Desenvolvimento Web, temos o objetivo de adquirir habilidades front-end, ou seja, o estilo de um site e seu conteúdo serão modificados por nós. Nesse viés, tudo que há aqui aprendemos ao decorrer dos bimestres.
+                </a>
+
+            </li>
+
+        </ul>
+        
+
+    </header>
+
+
+
+
+    <main id="container_conteudo">
+
+        <div id="decoracao" class="seccao">
+            <img src="inicio.jpg">
+        </div>
+
+        <div id="introducao" class="seccao">
+        
+            <h2 class="subtitulo">
     
-    </p>
+                Introdução
+    
+            </h2>
+    
+            <p class="texto" >
+    
+                Com finalidade de submissão de trabalhos avaliativos de Desenvolvimento Web durante o ano letivo de 2025, este site está sendo produzido. Proposta feita pelo Mestre Jefferson Chaves, um docente muito competente, a fim de aquecermos nossos cérebros.
+    
+            </p>
+    
+        </div>
+    
+    
+        <div id="disciplina" class="seccao">
+            
+            <div>
 
-    <p class="introducao" >
+                <h2 class="subtitulo">
+        
+                    Disciplina
+        
+                </h2>
+        
+                <p class="texto" >
+        
+                    Na disciplina, temos o objetivo de adquirir habilidades front-end, ou seja, a estilização de um site e modificação de seu conteúdo por nós. Consequentemente, tudo que há aqui aprendemos ao decorrer dos bimestres. <br>
+                    Como atualizaremos muita vezes este site, a interface terá muitas versões, e o início da proposta deu-se no dia 11 de abril de 2025.
+                
+                </p>
 
-        Agora estamos utilizando tudo que aprendemos até o momento, até o dia 11 de abril de 2025, nesse portfólio. Presente está, nesta plicação, páginas de importantes presenças, pois, com a facilitação de sua ordenagem e localização, seremos, eu e meus colegas, capazes de exercem as demais atividades, que virão com o tempo, sem perder a noção de horário procurando algum documento que está perdido no GitHub.
+            </div>
+            
 
-    </p>
+            <img src="estudo.jpg">
+            
+            
+        </div>
+    
+    
+        <div  id="motivacao" class="seccao">
+            
+            <img src="motivacao.jpg">
+
+            <div>
+
+                <h2 class="subtitulo">
+    
+                    Motivação
+        
+                </h2>
+        
+                <p class="texto" >
+                    
+                    Presente está diversas páginas de importante presença, pois, com a facilitação de sua ordenação e localização, seremos, eu e meus colegas, capazes de exercer as demais atividades, que virão com o tempo, sem perder a noção de horário devido à procura de algum documento que está perdido no GitHub, ou ainda, no próprio computador.
+        
+                </p>
+
+            </div>
+    
+        </div>
+    
+    
+        <div  id="reflexao" class="seccao">
+            
+            <div>
+
+                <h2 class="subtitulo">
+    
+                    Reflexão
+        
+                </h2>
+        
+                <p class="texto" >
+        
+                    Nesse viés, teremos muitos benefícios na construção desse ambiente. Portanto, gostaria de oferecer meus agredicimentos ao nosso orientador que teve essa ideia genial de aproveitamento de atividades.
+        
+                </p>
+
+            </div>
+
+            <img src="reflexao.jpg">
+    
+        </div>
+
+    </main>
+
+    <footer id = "rodape">
+
+        <div>
+
+            <p>
+                
+                Desenvolvimento Web
+            
+            </p>
+
+        </div>
+
+    </footer>
+
+
 
 
 </body>
+
+
+<script>
+
+    document.getElementById("container_conteudo").style.marginTop = `calc(${document.getElementById("cabecalho").offsetHeight}px + 5px)`; // Define a margem superior do container para não bater no cabecalho
+
+    document.getElementsByClassName("seccao")[1].getElementsByClassName("texto")[0].style.height = `calc(${document.getElementById("introducao").offsetHeight}px - ${document.getElementsByClassName("subtitulo")[0].offsetHeight}px - 70px)`; // Define a altura do parágrafo da introdução para ficar do tamanho da div menos o subtítulo e menos o espaçamento entre ele e o parágrafo
+
+    
+
+</script>
 
 </html>
