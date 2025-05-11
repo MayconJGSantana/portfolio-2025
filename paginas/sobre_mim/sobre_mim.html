@@ -3,9 +3,7 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
 
@@ -21,11 +19,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
     rel="stylesheet">
 
+
+
+
     <title>
         
-        Auto biografia
+        Document
 
     </title>
+
+    
 
 
     <style>
@@ -33,6 +36,8 @@
         * {
 
             margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
 
         }
 
@@ -104,8 +109,82 @@
             font-optical-sizing: auto;
             font-weight: 900; /* Espessura da fonte */
             font-style: normal;
+        }
+        
+        #cabecalho {
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            height: auto;
+            left: 0;
+            top: 0;
+            z-index: 1;
 
         }
+
+        #container_projetos > div {
+            
+            overflow: auto;
+            width: 80%;
+            margin: 0 calc(20% / 2);
+
+        }
+
+            .projetos {
+
+                height: auto;
+                width: auto;
+
+                float: left;
+
+            }
+            
+                .projeto {
+                    
+                    height: 49vh;
+                    margin-bottom: 1vh;
+                    border-radius: 35px;
+                    background-color: rgba(128, 128, 128, 0.363);
+                    width: 18.75vw;
+                    margin-right: 1vw;
+
+                }
+
+                    .projeto a {
+
+                        padding-left: 100px;
+
+
+
+                    }
+
+                    .botao_projeto {
+
+                        height: 70px;
+                        width: 170px;
+                        border-radius: 50px;
+                        margin-top: 60px;
+
+                        font-size: 30px;
+
+                        border: #0118D8 1px solid;
+
+                    }
+
+                    #portfolio {
+
+                        width: 85%;
+                        height: auto;
+                        border-radius: 20px 20px 20px 20px;
+
+                        margin-left: 30px;
+                        margin-top: 30px;
+
+                    }
+
+
+
+        
 
     </style>
 
@@ -113,74 +192,123 @@
 
 <body>
     
+    <header id = "cabecalho">
 
-    <h1 id="titulo" >
+        <h1 id="titulo" >
 
-        Meu Portfólio
+            Meu Portfólio
 
-    </h1>
+        </h1>
 
-    <ul id="menu" >
+        <ul id="menu" >
 
-        <li>
+            <li>
 
-            <a href="../index.html" class="cursiva">
+                <a href="../../index.html" class="cursiva">
 
-                Home
+                    Home
 
-            </a>
+                </a>
 
-        </li>
+            </li>
 
-        <li>
+            <li>
 
-            <a href="" class="cursiva">
+                <a href="../sobre_mim/sobre_mim.html" class="cursiva">
 
-                Sobre mim
+                    Sobre mim
 
-            </a>
+                </a>
 
-        </li>
+            </li>
 
-        <li>
+            <li>
 
-            <a href="projetos.html" class="cursiva">
+                <a href="" class="cursiva">
 
-                Projetos
+                    Projetos
 
-            </a>
+                </a>
 
-        </li>
+            </li>
 
-    </ul>
+        </ul>
 
-    <ul>
-
-        <li>
-            
-            <p>
-
-                Idade: procurar um jeito de vir automático com a data de nascimento
-            
-            </p>
-
-        </li>
+    </header>
 
 
-        <li>
 
-            <p>
 
-                Data de nascimento: vai dar igual né
 
-            </p>
+    <main id = "container_projetos">
+        
+        <div>
 
-        </li>
+            <div class = "projetos">
+                <div class = "projeto">
+
+                    <img id = "portfolio" src="portfolio.webp">
+        
+                    <a href="../../index.html">
+        
+                        <button class = "botao_projeto">
+
+                           Portfólio
+
+                        </button>
+        
+                    </a>
+
+                </div>
+
+
+                <div class = "projeto">
+
+                </div>
+
+            </div>
 
         
+            <div class = "projetos">
 
-    </ul>
+                <div class = "projeto">
+                    
+
+                </div>
+
+                <div class = "projeto"></div>
+
+            </div>
+
+            <div class = "projetos">
+
+                <div class = "projeto"></div>
+
+                <div class = "projeto"></div>
+            </div>
+            
+            <div class = "projetos">
+
+                <div class = "projeto"></div>
+
+                <div class = "projeto"></div>
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
 
 </body>
+
+<script>
+
+    
+    document.getElementById("container_projetos").style.marginTop = `calc(${document.getElementById("cabecalho").offsetHeight}px + 5px)`; // Define a margem superior do container para não bater no cabecalho
+
+</script>
 
 </html>
