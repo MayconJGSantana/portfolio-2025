@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Incluir CSS do Google -->
+
+    <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+    rel="stylesheet">
+
+
+
+
+    <title>
+        
+        Document
+
+    </title>
+
+    
+
+
+    <style>
+
+        * {
+
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        #titulo {
+
+            text-align: center;
+
+        }
+
+        #menu {
+
+            display: flex; /* Os blocos ficam flexíveis, podemos colocá-los de formas diferentes*/
+
+            flex-direction: row; /* Deixa os blocos em linha */
+
+
+
+            list-style-type: none; /* Sem bolinhas */
+
+            background-color: #0118D8;
+
+            justify-content: center;
+            /* Coloca os itens no lado que você quiser. O Justify só server para itens flexíveis */
+
+        }
+
+        #menu li {
+
+            background-color: #1B56FD;
+
+            padding: 5px;
+            /* Aumenta a distância entre o padding - Margem interna - de todos os cantos, mas você pode especificar colocando padding-<lado> */
+
+            margin: 10px;
+            /* Aumenta a distância margin - Entre os blocos - */
+
+            border-radius: 50px;
+
+        }
+
+        #menu li a {
+
+            color: #E9DFC3;
+
+            text-decoration: none;
+
+            padding: 10px; /* A tag vai ficar em cima do padding do ul */
+
+            display: block;
+            
+
+        }
+
+        #menu li a:hover /* Se o mouse estiver em cima */ {
+
+            background-color: blueviolet;
+
+            color: wheat;
+
+            transition: all 0.5s ease; /* Dá um delay na troca de estilo */
+
+            border-radius: 10px;
+
+        }
+
+        .cursiva {
+
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 900; /* Espessura da fonte */
+            font-style: normal;
+        }
+        
+        #cabecalho {
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            height: auto;
+            left: 0;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        #container_projetos > div {
+            
+            overflow: auto;
+            width: 80%;
+            margin: 0 calc(20% / 2);
+
+        }
+
+            .projetos {
+
+                height: auto;
+                width: auto;
+
+                float: left;
+
+            }
+            
+                .projeto {
+                    
+                    height: 49vh;
+                    margin-bottom: 1vh;
+                    border-radius: 35px;
+                    background-color: rgba(128, 128, 128, 0.363);
+                    width: 18.75vw;
+                    margin-right: 1vw;
+
+                }
+
+                    .projeto a {
+
+                        padding-left: 100px;
+
+
+
+                    }
+
+                    .botao_projeto {
+
+                        height: 70px;
+                        width: 170px;
+                        border-radius: 50px;
+                        margin-top: 60px;
+
+                        font-size: 30px;
+
+                        border: #0118D8 1px solid;
+
+                    }
+
+                    #portfolio {
+
+                        width: 85%;
+                        height: auto;
+                        border-radius: 20px 20px 20px 20px;
+
+                        margin-left: 30px;
+                        margin-top: 30px;
+
+                    }
+
+
+
+        
+
+    </style>
+
+</head>
+
+<body>
+    
+    <header id = "cabecalho">
+
+        <h1 id="titulo" >
+
+            Meu Portfólio
+
+        </h1>
+
+        <ul id="menu" >
+
+            <li>
+
+                <a href="../../index.html" class="cursiva">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../sobre_mim/sobre_mim.html" class="cursiva">
+
+                    Sobre mim
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="" class="cursiva">
+
+                    Projetos
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </header>
+
+
+
+
+
+    <main id = "container_projetos">
+        
+        <div>
+
+            <div class = "projetos">
+                <div class = "projeto">
+
+                    <img id = "portfolio" src="portfolio.webp">
+        
+                    <a href="../../index.html">
+        
+                        <button class = "botao_projeto">
+
+                           Portfólio
+
+                        </button>
+        
+                    </a>
+
+                </div>
+
+
+                <div class = "projeto">
+
+                </div>
+
+            </div>
+
+        
+            <div class = "projetos">
+
+                <div class = "projeto">
+                    
+
+                </div>
+
+                <div class = "projeto"></div>
+
+            </div>
+
+            <div class = "projetos">
+
+                <div class = "projeto"></div>
+
+                <div class = "projeto"></div>
+            </div>
+            
+            <div class = "projetos">
+
+                <div class = "projeto"></div>
+
+                <div class = "projeto"></div>
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+</body>
+
+<script>
+
+    
+    document.getElementById("container_projetos").style.marginTop = `calc(${document.getElementById("cabecalho").offsetHeight}px + 5px)`; // Define a margem superior do container para não bater no cabecalho
+
+</script>
+
+</html>
